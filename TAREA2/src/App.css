@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f3f8;
+}
+
+.contenedor {
+  min-height: 100vh;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.contenedor h1 {
+  color: #26334a;
+  margin-bottom: 40px;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.tarjeta {
+  background-color: white;
+  width: 280px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-imagen {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.tarjeta h2 {
+  color: #26334a;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.tarjeta h3 {
+  color: #6479b5;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tarjeta p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .contenedor {
+    padding: 30px 15px;
+  }
+
+  .contenedor-tarjetas {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta {
+    width: 100%;
+    max-width: 320px;
+  }
+}
